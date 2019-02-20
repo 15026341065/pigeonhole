@@ -1,0 +1,6 @@
+<!--miniprogram/custom-tab-bar/index.wxml-->
+<view id="tabber">
+  <i-tab-bar current="{{ current }}" bindchange="switchTab">
+    <i-tab-bar-item wx:for="{{list}}" count="{{item.count?item.count:0}}" dot="{{item.dot?item.dot:false}}" wx:key="{{index}}" key="{{item.route}}" icon="{{item.icon}}" current-icon="{{item.currentIcon}}" title="{{item.title}}" current-img="{{item.currentImg?item.currentImg:''}}" img="{{item.img?item.img:''}}"></i-tab-bar-item>
+  </i-tab-bar>
+</view>

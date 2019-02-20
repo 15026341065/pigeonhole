@@ -1,0 +1,12 @@
+<!--pages/shoppingCart/noData/index.wxml-->
+<view>
+    <view class="noData">
+        <image src="../../../../assets/images/shoppingCart/ic_trolley_3.png"></image>
+        <view class="tip">
+            <text>一件商品都没有哦~</text>
+        </view>
+        <view class="button">
+            <button bindtap="toHome">去首页逛逛</button>
+        </view>
+    </view>
+</view>

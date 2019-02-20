@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "我的订单",
+  "usingComponents": {
+    "allorder": "./components/allorder/index",
+    "invoice": "./components/invoice/index",
+    "paymentForm": "./components/paymentForm/index",
+    "pendingPayment": "./components/pendingPayment/index",
+    "returnOrder": "./components/returnOrder/index",
+    "i-row": "../../dist/row/index",
+    "i-col": "../../dist/col/index"
+  }
+}

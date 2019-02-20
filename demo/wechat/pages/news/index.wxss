@@ -1,0 +1,51 @@
+.flex {
+  display: flex;
+}
+/* 居中 */
+.flexCentered {
+  justify-content: center;
+}
+/* 垂直 */
+.flexVertical {
+  align-items: center;
+}
+.flexFirst {
+  flex-grow: 0;
+}
+.flexCenter {
+  flex-grow: 1;
+}
+.flexLast {
+  flex-grow: 0;
+}
+.flexLevel {
+  flex: 1;
+}
+.newsContainer {
+  padding-top: 20rpx;
+}
+.newsContainer .newContent {
+  padding: 20rpx 29rpx;
+  background: white;
+}
+.newsContainer .newContent .img {
+  font-size: 0;
+  padding-right: 25rpx;
+}
+.newsContainer .newContent .img image {
+  width: 80rpx;
+  height: 80rpx;
+}
+.newsContainer .newContent .title {
+  padding-bottom: 15rpx;
+  font-size: 30rpx;
+  color: #333333;
+}
+.newsContainer .newContent .title .date {
+  font-size: 20rpx;
+  color: #999999;
+}
+.newsContainer .newContent .text {
+  color: #999999;
+  font-size: 28rpx;
+}

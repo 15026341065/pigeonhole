@@ -1,0 +1,109 @@
+@import "../../../../assets/css/flex.wxss";
+.content{
+  padding-top: 20rpx;
+}
+.order{
+  background: white;
+  margin-bottom: 20rpx;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  .orderNum{
+    padding: 28rpx 23rpx;
+    border-bottom:1rpx solid #EDEDED;
+    .flex();
+    .flexVertical();
+    .num{
+      color: #1D3646;
+      font-size: 20rpx;
+      .flexCenter();
+    }
+    .orderState{
+      font-size: 24rpx;
+      color: #FD4912;
+      .flexLast();
+    }
+  }
+  .orderdetails{
+    border-bottom:1rpx solid #EDEDED;
+      .prodetails{
+        padding: 40rpx 23rpx;
+        .flex();
+        .proLogo{
+          .flexCenter();
+          view{
+            border:1rpx solid #EDEDED;
+            font-size: 0;
+            width:100rpx;
+            height:100rpx;
+            margin-right: 20rpx;
+            &:last-child{
+              margin-right: 0;
+            }
+
+            image{
+              width: 100%;
+              height:100%;
+            }
+          }
+        }
+        .promoney{
+          .flexLast();
+          .money{
+            font-size: 28rpx;
+            color: #FD4912;
+          }
+          .pronum{
+            padding-top: 21rpx;
+            font-size: 20rpx;
+            color: #A5AAAD;
+          }
+        }
+      }
+    .orderDesc{
+      padding: 0 23rpx 40rpx;
+      view{
+        padding: 20rpx;
+        background: #F8F8F8;
+        border-bottom: 1rpx solid white;
+        &:last-child{
+          border-bottom: none;
+        }
+        font-size: 24rpx;
+        color: #849098;
+        .flex();
+        .type{
+          .flexLast();
+        }
+        .desc{
+          .flexCenter();
+          padding-left: 23rpx;
+          color: #1D3646;
+        }
+        .state{
+          .flexFirst();
+        }
+      }
+    }
+  }
+  .orderdate{
+    padding: 12rpx 23rpx;
+    .flex();
+    .flexVertical();
+      .date{
+        .flexCenter();
+        font-size: 20rpx;
+        color: #849098;
+      }
+    .button{
+      .flexFirst();
+      font-size: 0;
+      button{
+        background: #FFFFFF;
+        height:56rpx;
+        font-size: 24rpx;
+        color: #1D3646;
+      }
+    }
+  }
+}

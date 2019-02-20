@@ -1,0 +1,15 @@
+<!--pages/news/index.wxml-->
+<view class="newsContainer">
+    <view class="newContent flex">
+        <view class="img flexLast flexVertical">
+            <image></image>
+        </view>
+        <view class="flexCenter flexVertical">
+            <view class="title lang flex">
+                <text class="flexCenter">公告信息</text>
+                <text class="date flexLast">3分钟前</text>
+            </view>
+            <view class="text lang">现更改咨询热线03711234566，之前的...</view>
+        </view>
+    </view>
+</view>

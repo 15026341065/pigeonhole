@@ -1,0 +1,6 @@
+#container {
+  padding-bottom: 50px;
+}
+page {
+  background-color: #F8F8F8;
+}

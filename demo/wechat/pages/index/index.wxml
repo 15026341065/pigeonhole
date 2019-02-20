@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view id="container">
+    <!-- 头部 -->
+    <view class="searchContainer flex flexVertical">
+        <view class="iconLeft flexFirst">
+            <i-icon color="#fff" size="30" type="other"/>
+        </view>
+        <view class="flex flexVertical flexCenter searchContent">
+            <i-icon class="flex flexVertical" color="rgba(0, 0, 0, 0.15)" type="search" size="18"/>
+            <input placeholder-class="searchInput" type="text" placeholder="名称|编号|拼音码|药企名称"></input>
+        </view>
+        <view class="iconRight flexLast">
+            <navigator url="/pages/news/index">
+                <i-icon color="#fff" type="interactive" size="28"/>
+            </navigator>
+        </view>
+    </view>
+    <!-- banner -->
+    <view>
+        <swiper class="homeBanner" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}"
+                indicator-active-color="rgba(1,161,89,0.5)" indicator-color="rgba(0,0,0,0.1)">
+            <block wx:for="{{imgUrls}}" wx:key="{{item}}">
+                <swiper-item>
+                    <image src="{{item}}" class="slide-image homeBannerImg"/>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <!-- 分类 -->
+    <view class="characteristicLocationContainer">
+        <i-row>
+            <i-col wx:for="{{characteristicLocationContainerList}}" wx:key="{{index}}" span="6" i-class="col-class">
+                <navigator url="{{item.path}}">
+                    <view class="characteristicLocationContent">
+                        <image src="{{item.img}}"></image>
+                        <view class="text">
+                            <text>{{item.text}}</text>
+                        </view>
+                    </view>
+                </navigator>
+            </i-col>
+        </i-row>
+    </view>
+
+    <view>
+        <!-- 推荐品牌  -->
+        <view class="homeCommonTitle">
+            <image src="../../assets/images/home/ic_home_pinpai.png"></image>
+        </view>
+        <pro triggerState="{{triggerState}}" acceptData="{{acceptData}}"></pro>
+    </view>
+</view>

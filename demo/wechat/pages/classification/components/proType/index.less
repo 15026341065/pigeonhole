@@ -1,0 +1,50 @@
+@import "../../../../assets/css/flex.wxss";
+@import "../../../../assets/css/common.wxss";
+.proTypeContainer{
+  position: absolute;
+  top:0;
+  left:0;
+  width:180rpx;
+  height:1135rpx;
+  overflow-x: hidden;
+  background:rgba(248,248,248,1);
+  box-shadow:5rpx 0rpx 10rpx 0rpx rgba(0, 0, 0, 0.1);
+  .selectParent{
+    color: #01A159;
+    background: rgba(1,161,89,0.1);
+    position: relative;
+    &:after{
+      position: absolute;
+      top:0;
+      left:0;
+      content: " ";
+      width:4rpx;
+      height:100%;
+      background:rgba(1,161,89,1);
+    }
+  }
+
+  .proTypeCommon{
+    height: 100rpx;
+    padding-left: 31rpx;
+    .flex();
+    .flexVertical();
+    text{
+      display: block;
+    }
+  }
+  .proTypeList{
+    display: none;
+    .proTypeChildren{
+      background: #FFFFFF;
+      color: #666666;
+      .lang();
+    }
+  }
+  .selectProTypeList{
+    display: block !important;
+    .selectChildren{
+      color: #01A159;
+    }
+  }
+}

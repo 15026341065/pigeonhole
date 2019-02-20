@@ -1,0 +1,64 @@
+<!--pages/shoppingCart/views/confirmOrder/index.wxml-->
+<view>
+    <view class="receiptInfo">
+        <view class="receipInfoContainer flex flexVertical">
+            <image class="ic_more" src="../../../../assets/images/shoppingCart/ic_more.png"></image>
+            <view class="icon flexLast">
+                <image src="../../../../assets/images/shoppingCart/ic_add_1.png"></image>
+            </view>
+            <view class="flexCenter receipInfoContent">
+                <view class="userInfo">
+                    <view class="userName">
+                        收货人：张三
+                    </view>
+                    <view class="userPhone">
+                        181 9358 6345
+                    </view>
+                </view>
+                <view class="receipCompany">
+                    收货公司：成都医腾百康科技有限公司
+                </view>
+                <view class="receipAddress">
+                    收货地址：四川省成都市武侯区天华二路81号腾讯大厦B座
+                    15楼1508号
+                </view>
+            </view>
+        </view>
+    </view>
+    <image class="ic_add_list flex" src="../../../../assets/images/shoppingCart/ic_add_list.png"></image>
+    <view class="orderList">
+         <view class="orderListContainer">
+             <view class="orderCommonTitle">
+                 <text class="title">商品清单</text>
+                 <text class="subtitle">共5贱货</text>
+             </view>
+             <view class="orderform">
+                 <view class="orderformContainer">
+                     <i-row i-class="orderformContent" wx:for="{{5}}">
+                         <i-col span="2" i-class="col-class">
+                             <view>{{index+1}}</view>
+                         </i-col>
+                         <i-col span="10" i-class="col-class">
+                             <view>艾洛松(糠酸莫米松乳膏)</view>
+                         </i-col>
+                         <i-col span="4" i-class="col-class">
+                             <view class="center moneyColor">￥0.05</view>
+                         </i-col>
+                         <i-col span="4" i-class="col-class">
+                             <view class="center">10和</view>
+                         </i-col>
+                         <i-col span="4" i-class="col-class">
+                             <view class="center moneyColor">￥230.0</view>
+                         </i-col>
+                     </i-row>
+                     <view class="totalPrice">
+                         <view class="num">gong5</view>
+                         <view class="money">
+
+                         </view>
+                     </view>
+                 </view>
+             </view>
+         </view>
+    </view>
+</view>

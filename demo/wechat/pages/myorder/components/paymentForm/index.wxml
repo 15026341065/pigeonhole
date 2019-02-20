@@ -1,0 +1,23 @@
+<!--pages/myorder/components/paymentForm/index.wxml-->
+<view class="content">
+    <view class="order">
+        <view class="orderNum">
+            <view class="num">订单编号:12548788721545</view>
+            <view class="orderState">确认到账</view>
+        </view>
+        <view class="orderdetails">
+
+            <view class="orderDesc">
+                <view>
+                    <text class="type">付账金额:</text>
+                    <text class="desc money">￥1582.2</text>
+                </view>
+                <view>
+                    <text class="type">到账时间:</text>
+                    <text class="desc">2018-01-03</text>
+                 </view>
+            </view>
+        </view>
+    </view>
+</view>
+

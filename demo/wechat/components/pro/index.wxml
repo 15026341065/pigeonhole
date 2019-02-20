@@ -1,0 +1,29 @@
+<!--components/pro/index.wxml-->
+<view class="recommendedBrand">
+    <view class="recommendedBrandContainer">
+        <view class="recommendedBrandConttent" wx:for="{{proList}}" wx:key="{{index}}">
+            <view class="brand">
+                <view class="brandPro">
+                    <image src="{{item.Picture}}"></image>
+                </view>
+                <view class="proDesc">
+                    <view class="proName lang">{{item.Name}}</view>
+                    <view class="brandName lang">品牌:{{item.BrandName}}</view>
+                    <view class="proDetails flex">
+                        <text>规格:{{item.Model}}</text>
+                        <text>库存:{{item.OrderNumber}}</text>
+                    </view>
+                    <view class="proShopping flex flexVertical">
+                        <view class="proPrice  flexCenter ">
+                            <text class="price">￥0.88</text>
+                            <text class="company">/盒</text>
+                        </view>
+                        <view class="addPro flexLast">
+                            <image bindtap="addPro" src="../../assets/images/home/ic_trolley_1.png"></image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

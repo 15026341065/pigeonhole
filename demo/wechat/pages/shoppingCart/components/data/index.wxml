@@ -1,0 +1,49 @@
+<!--pages/shoppingCart/data/index.wxml-->
+<view wx:for="{{list}}" wx:key="{{index}}" class="proList">
+    <view class="proContainer flex flexVertical">
+        <view class="proCheck flexFirst ">
+            <radio-group class="radio-group" data-index="{{index}}" bindtap="radioChange">
+                <radio class="radio" value="{{index}}"  checked="{{item.checked||allChecked}}">
+                </radio>
+            </radio-group>
+        </view>
+        <view class="proInfo flexCenter flex flexVertical">
+            <view class="proLogo flexFirst flex flexVertical flexCentered">
+                <image></image>
+            </view>
+           <view class="flexCenter">
+               <view class="proDesc">
+                   <view class="proName">肌醇烟酸酯片</view>
+                   <view class="stock">库存:1387</view>
+               </view>
+               <view class="proPrice flex">
+                   <view class="proUnitPrice flex flexVertical flexCenter">
+                       <text class="num">￥0.09</text>
+                       <text>/盒</text>
+                   </view>
+                   <view class="proNum flexFirst">
+                       <i-input-number value="{{value}}" min="0" max="100" i-class="inputNumber" bindchange="handleChange" />
+                   </view>
+               </view>
+           </view>
+        </view>
+    </view>
+</view>
+<view class="settlement">
+   <view class="getmoney">
+       <view class="proCheck">
+           <radio-group class="radio-group" data-state="all" bindtap="radioChange">
+               <radio class="radio" value="test" checked="{{allChecked}}">
+                   全选
+               </radio>
+           </radio-group>
+       </view>
+       <view class="total">
+            <text>合计:</text>
+           <text class="money">￥18.28</text>
+       </view>
+   </view>
+    <view class="button">
+        <view>结算({{num}})</view>
+    </view>
+</view>

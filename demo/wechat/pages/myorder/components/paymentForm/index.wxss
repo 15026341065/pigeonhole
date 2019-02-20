@@ -1,0 +1,78 @@
+.flex {
+  display: flex;
+}
+/* 居中 */
+.flexCentered {
+  justify-content: center;
+}
+/* 垂直 */
+.flexVertical {
+  align-items: center;
+}
+.flexFirst {
+  flex-grow: 0;
+}
+.flexCenter {
+  flex-grow: 1;
+}
+.flexLast {
+  flex-grow: 0;
+}
+.flexLevel {
+  flex: 1;
+}
+.content {
+  padding-top: 20rpx;
+}
+.order {
+  background: white;
+  margin-bottom: 20rpx;
+}
+.order:last-child {
+  margin-bottom: 0;
+}
+.order .orderNum {
+  padding: 28rpx 23rpx;
+  border-bottom: 1rpx solid #EDEDED;
+  display: flex;
+  align-items: center;
+}
+.order .orderNum .num {
+  color: #1D3646;
+  font-size: 20rpx;
+  flex-grow: 1;
+}
+.order .orderNum .orderState {
+  font-size: 24rpx;
+  color: #FD4912;
+  flex-grow: 0;
+}
+.order .orderdetails .orderDesc {
+  padding: 40rpx 23rpx 40rpx;
+}
+.order .orderdetails .orderDesc view {
+  padding: 20rpx;
+  background: #F8F8F8;
+  border-bottom: 1rpx solid white;
+  font-size: 24rpx;
+  color: #849098;
+  display: flex;
+}
+.order .orderdetails .orderDesc view:last-child {
+  border-bottom: none;
+}
+.order .orderdetails .orderDesc view .type {
+  flex-grow: 0;
+}
+.order .orderdetails .orderDesc view .desc {
+  flex-grow: 1;
+  padding-left: 23rpx;
+  color: #1D3646;
+}
+.order .orderdetails .orderDesc view .state {
+  flex-grow: 0;
+}
+.order .orderdetails .orderDesc view .money {
+  font-size: 28rpx;
+  color: #FD4912;
+}

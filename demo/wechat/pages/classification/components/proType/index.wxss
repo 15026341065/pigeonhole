@@ -1,0 +1,77 @@
+.flex {
+  display: flex;
+}
+/* 居中 */
+.flexCentered {
+  justify-content: center;
+}
+/* 垂直 */
+.flexVertical {
+  align-items: center;
+}
+.flexFirst {
+  flex-grow: 0;
+}
+.flexCenter {
+  flex-grow: 1;
+}
+.flexLast {
+  flex-grow: 0;
+}
+.flexLevel {
+  flex: 1;
+}
+.lang {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.proTypeContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180rpx;
+  height: 1135rpx;
+  overflow-x: hidden;
+  background: #f8f8f8;
+  box-shadow: 5rpx 0rpx 10rpx 0rpx rgba(0, 0, 0, 0.1);
+}
+.proTypeContainer .selectParent {
+  color: #01A159;
+  background: rgba(1, 161, 89, 0.1);
+  position: relative;
+}
+.proTypeContainer .selectParent:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: " ";
+  width: 4rpx;
+  height: 100%;
+  background: #01a159;
+}
+.proTypeContainer .proTypeCommon {
+  height: 100rpx;
+  padding-left: 31rpx;
+  display: flex;
+  align-items: center;
+}
+.proTypeContainer .proTypeCommon text {
+  display: block;
+}
+.proTypeContainer .proTypeList {
+  display: none;
+}
+.proTypeContainer .proTypeList .proTypeChildren {
+  background: #FFFFFF;
+  color: #666666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.proTypeContainer .selectProTypeList {
+  display: block !important;
+}
+.proTypeContainer .selectProTypeList .selectChildren {
+  color: #01A159;
+}

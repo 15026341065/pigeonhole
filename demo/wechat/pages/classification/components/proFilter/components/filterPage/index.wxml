@@ -1,0 +1,20 @@
+<!--pages/classification/components/proFilter/components/filterPage/index.wxml-->
+<view class="proFilter">
+    <i-row>
+        <i-col span="8" i-class="col-class" wx:for="{{filterList}}" wx:key="{{index}}" >
+            <view class="proFilterTitle flex flexVertical flexCentered" bindtap="selectFilter" data-index="{{index}}" data-info="{{item}}">
+                <text class="{{selectFilterState===index?'selectFilter':''}} flex flexVertical" data-index="{{index}}" data-info="{{item}}">{{item.title}}</text>
+                <view class="filterSort" wx:if="{{item.sort}}">
+                    <view>
+                        <image wx:if="{{item.sortState===''||!item.sortState||item.sortState!=='asc'}}" src="../../../../../../assets/images/common/upArrow.png"></image>
+                        <image wx:if="{{item.sortState==='asc'}}" src="../../../../../../assets/images/common/selectUpArrow.png"></image>
+                    </view>
+                    <view>
+                        <image wx:if="{{item.sortState===''||!item.sortState||item.sortState!=='desc'}}" src="../../../../../../assets/images/common/downArrow.png"></image>
+                        <image wx:if="{{item.sortState==='desc'}}" src="../../../../../../assets/images/common/selectDownArrow.png"></image>
+                    </view>
+                </view>
+            </view>
+        </i-col>
+    </i-row>
+</view>

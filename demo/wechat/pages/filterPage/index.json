@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "产品",
+  "usingComponents": {
+    "i-icon": "../../dist/icon/index",
+    "filterPage":"../classification/components/proFilter/components/filterPage/index"
+  }
+}

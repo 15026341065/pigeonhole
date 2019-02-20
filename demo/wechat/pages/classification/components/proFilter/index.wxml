@@ -1,0 +1,5 @@
+<!--pages/classification/components/proFilter/index.wxml-->
+<view class="proContainer">
+    <filterPage></filterPage>
+    <pro></pro>
+</view>

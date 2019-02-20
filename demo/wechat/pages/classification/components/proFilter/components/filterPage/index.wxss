@@ -1,0 +1,62 @@
+.flex {
+  display: flex;
+}
+/* 居中 */
+.flexCentered {
+  justify-content: center;
+}
+/* 垂直 */
+.flexVertical {
+  align-items: center;
+}
+.flexFirst {
+  flex-grow: 0;
+}
+.flexCenter {
+  flex-grow: 1;
+}
+.flexLast {
+  flex-grow: 0;
+}
+.flexLevel {
+  flex: 1;
+}
+.lang {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.proFilter {
+  background: white;
+}
+.proFilter .proFilterTitle {
+  height: 97rpx;
+}
+.proFilter .proFilterTitle text {
+  height: 100%;
+}
+.proFilter .filterSort {
+  font-size: 0;
+  padding-left: 10rpx;
+}
+.proFilter .filterSort view {
+  font-size: 0;
+}
+.proFilter .filterSort image {
+  width: 18rpx;
+  height: 16rpx;
+}
+.proFilter .selectFilter {
+  color: #01A159;
+  position: relative;
+}
+.proFilter .selectFilter:after {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  content: " ";
+  height: 4rpx;
+  width: 100%;
+  background: #01A159;
+}

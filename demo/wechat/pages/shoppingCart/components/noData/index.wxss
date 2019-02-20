@@ -1,0 +1,52 @@
+.flex {
+  display: flex;
+}
+/* 居中 */
+.flexCentered {
+  justify-content: center;
+}
+/* 垂直 */
+.flexVertical {
+  align-items: center;
+}
+.flexFirst {
+  flex-grow: 0;
+}
+.flexCenter {
+  flex-grow: 1;
+}
+.flexLast {
+  flex-grow: 0;
+}
+.flexLevel {
+  flex: 1;
+}
+.noData {
+  position: fixed;
+  width: 100%;
+  top: 25%;
+  left: 0;
+  text-align: center;
+}
+.noData image {
+  width: 140rpx;
+  height: 140rpx;
+}
+.noData .tip {
+  padding: 30rpx 0 130rpx;
+}
+.noData .tip text {
+  font-size: 24rpx;
+  color: #999999;
+}
+.noData .button button {
+  width: 240rpx;
+  height: 80rpx;
+  background: #ff5b29;
+  box-shadow: 0px 4rpx 10rpx 0px rgba(0, 0, 0, 0.2);
+  border-radius: 4rpx;
+  font-size: 30rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: #ffffff;
+}

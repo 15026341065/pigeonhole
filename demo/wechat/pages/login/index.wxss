@@ -1,0 +1,75 @@
+.flex {
+  display: flex;
+}
+/* 居中 */
+.flexCentered {
+  justify-content: center;
+}
+/* 垂直 */
+.flexVertical {
+  align-items: center;
+}
+.flexFirst {
+  flex-grow: 0;
+}
+.flexCenter {
+  flex-grow: 1;
+}
+.flexLast {
+  flex-grow: 0;
+}
+.flexLevel {
+  flex: 1;
+}
+page {
+  background: white;
+}
+.loginBak {
+  height: 400rpx;
+  background: url("http://192.168.0.182:8889/youxinstatic/img/images/login/ic_login_logo.png") no-repeat 50% 50%, url('http://192.168.0.182:8889/youxinstatic/img/images/login/bg_login_dhd.png') no-repeat;
+  background-size: 329rpx 98rpx, 100% 100%;
+}
+.loginContainer {
+  padding: 30rpx 30rpx 0;
+  font-size: 0;
+}
+.loginContainer .loginCommon {
+  margin-bottom: 30rpx;
+  background: #f8f8f8;
+  border-radius: 4rpx;
+  overflow: hidden;
+  padding: 0 30rpx;
+}
+.loginContainer .loginCommon .image {
+  padding-right: 30rpx;
+}
+.loginContainer .loginCommon .image image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.loginContainer .loginCommon .input input {
+  height: 100rpx;
+  background: none;
+  outline: none;
+  font-size: 30rpx;
+  width: 100%;
+  border-right: none;
+}
+.loginContainer .loginButton {
+  padding-top: 23rpx;
+  border-radius: 4rpx;
+}
+.loginContainer .loginButton button {
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  background: #01a159;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: #ffffff;
+}
+.loginContainer .radio {
+  transform: scale(0.7);
+  font-size: 24rpx;
+  color: #666666;
+}

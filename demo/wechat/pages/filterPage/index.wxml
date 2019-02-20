@@ -1,0 +1,38 @@
+<!--pages/filterPage/index.wxml-->
+<view>
+    <view class="searchContainer">
+        <view class="flex flexVertical flexCenter searchContent">
+            <input placeholder-class="searchInput" type="text" placeholder="名称|编号|拼音码|药企名称"></input>
+            <i-icon class="flex flexVertical" color="rgba(0, 0, 0, 0.15)" type="search" size="18"/>
+        </view>
+    </view>
+    <view>
+        <filterPage></filterPage>
+    </view>
+    <view class="list">
+        <view wx:for="{{list}}" wx:key="{{index}}" class="proList">
+            <view class="proContainer flex flexVertical">
+                <view class="proInfo flexCenter flex flexVertical">
+                    <view class="proLogo flexFirst flex flexVertical flexCentered">
+                        <image></image>
+                    </view>
+                    <view class="flexCenter">
+                        <view class="proDesc">
+                            <view class="proName">肌醇烟酸酯片</view>
+                            <view class="stock">库存:1387</view>
+                        </view>
+                        <view class="proPrice flex">
+                            <view class="proUnitPrice flex flexVertical flexCenter">
+                                <text class="num">￥0.09</text>
+                                <text>/盒</text>
+                            </view>
+                            <view class="proNum flexFirst">
+                                <image bindtap="addPro" src="../../../../../assets/images/home/ic_trolley_1.png"></image>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

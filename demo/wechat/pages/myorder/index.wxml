@@ -1,0 +1,32 @@
+<!--pages/myorder/index.wxml-->
+<view class="tab">
+    <view class="proFilter flex">
+            <view span="5" class="col-class" wx:for="{{filterList}}" wx:key="{{index}}" >
+                <view class="proFilterTitle flex flexVertical flexCentered" bindtap="selectFilter" data-index="{{index}}" data-info="{{item}}">
+                    <text class="{{selectFilterState===index?'selectFilter':''}} flex flexVertical" data-index="{{index}}" data-info="{{item}}">{{item.title}}</text>
+                    <view class="filterSort" wx:if="{{item.sort}}">
+                        <view>
+                            <image wx:if="{{item.sortState===''||!item.sortState||item.sortState!=='asc'}}" src="../../assets/images/common/upArrow.png"></image>
+                            <image wx:if="{{item.sortState==='asc'}}" src="../../assets/images/common/selectUpArrow.png"></image>
+                        </view>
+                        <view>
+                            <image wx:if="{{item.sortState===''||!item.sortState||item.sortState!=='desc'}}" src="../../assets/images/common/downArrow.png"></image>
+                            <image wx:if="{{item.sortState==='desc'}}" src="../../assets/images/common/selectDownArrow.png"></image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+    </view>
+</view>
+<view>
+    <!--全部订单-->
+    <allorder wx:if="{{pageState==='allorder'}}"></allorder>
+    <!--发货单-->
+    <invoice wx:if="{{pageState==='invoice'}}"></invoice>
+    <!--支付单-->
+    <paymentForm wx:if="{{pageState==='paymentForm'}}"></paymentForm>
+    <!--待付款-->
+    <pendingPayment wx:if="{{pageState==='pendingPayment'}}"></pendingPayment>
+    <!--退货单-->
+    <returnOrder wx:if="{{pageState==='returnOrder'}}"></returnOrder>
+</view>

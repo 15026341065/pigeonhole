@@ -1,0 +1,26 @@
+<!--pages/myorder/components/invoice/index.wxml-->
+<view class="content">
+    <view class="order">
+        <view class="orderNum">
+            <view class="num">订单编号:12548788721545</view>
+            <view class="orderState">确认收货</view>
+        </view>
+        <view class="orderdetails">
+
+            <view class="orderDesc">
+                <view>
+                    <text class="type">发货时间:</text>
+                    <text class="desc">￥1582.2</text>
+                </view>
+                <view>
+                    <text class="type">发货人:</text>
+                    <text class="desc">2018-01-03</text>
+                </view>
+                <view>
+                    <text class="type">收货地址:</text>
+                    <text class="desc lang">四川省成都市武侯区天华二路81号腾讯大厦B座 </text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/test/index",
+    "pages/shoppingCart/views/confirmOrder/index",
+    "pages/classification/index",
+    "pages/news/index",
+    "pages/filterPage/index",
+    "pages/myorder/index",
+    "pages/shoppingCart/index",
+    "pages/login/index"
+  ],
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "temp"
+      },
+      {
+        "pagePath": "pages/classification/index",
+        "text": "temp1"
+      },{
+        "pagePath": "pages/shoppingCart/index",
+        "text": "temp1"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "demo",
+    "navigationBarTextStyle":"black"
+  }
+}

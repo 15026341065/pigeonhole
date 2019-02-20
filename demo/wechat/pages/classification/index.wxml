@@ -1,0 +1,13 @@
+<!--pages/classification/index.wxml-->
+<view>
+    <view class="searchContainer">
+        <view class="flex flexVertical flexCenter searchContent">
+            <input placeholder-class="searchInput" type="text" placeholder="名称|编号|拼音码|药企名称"></input>
+            <i-icon class="flex flexVertical" color="rgba(0, 0, 0, 0.15)" type="search" size="18"/>
+        </view>
+    </view>
+    <view class="classificationContainer">
+        <proType></proType>
+        <proFilter></proFilter>
+    </view>
+</view>

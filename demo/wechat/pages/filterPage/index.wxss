@@ -1,0 +1,114 @@
+.flex {
+  display: flex;
+}
+/* 居中 */
+.flexCentered {
+  justify-content: center;
+}
+/* 垂直 */
+.flexVertical {
+  align-items: center;
+}
+.flexFirst {
+  flex-grow: 0;
+}
+.flexCenter {
+  flex-grow: 1;
+}
+.flexLast {
+  flex-grow: 0;
+}
+.flexLevel {
+  flex: 1;
+}
+.lang {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+view {
+  font-size: 30rpx;
+  color: #333333;
+}
+.searchContainer {
+  background: #01A159;
+  padding: 18rpx 40rpx;
+}
+.searchContainer .searchContent {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 32rpx;
+  padding: 0 35rpx;
+}
+.searchContainer .searchContent .searchInput {
+  color: rgba(255, 255, 255, 0.5);
+}
+.searchContainer .searchContent input {
+  height: 64rpx;
+  font-size: 30rpx;
+  width: 100%;
+  color: #FFFFFF;
+}
+.list {
+  padding-top: 10rpx;
+}
+.proList {
+  padding-bottom: 20rpx;
+}
+.proList:last-child {
+  padding-bottom: 0;
+}
+.proList .proContainer {
+  padding: 30rpx 0 30rpx 10rpx;
+  background: white;
+}
+.proList .proContainer .proCheck {
+  padding-right: 17rpx;
+}
+.proList .proContainer .proCheck .radio {
+  transform: scale(0.8);
+}
+.proList .proContainer .proInfo .proLogo {
+  font-size: 0;
+  width: 160rpx;
+  height: 160rpx;
+  border: 1rpx solid #ededed;
+}
+.proList .proContainer .proInfo .proLogo image {
+  width: 138rpx;
+  height: 138rpx;
+}
+.proList .proContainer .proInfo .proDesc {
+  padding-left: 33rpx;
+}
+.proList .proContainer .proInfo .proDesc .proName {
+  padding-top: 13rpx;
+  color: #1D3646;
+  font-size: 28rpx;
+}
+.proList .proContainer .proInfo .proDesc .stock {
+  padding: 22rpx 0 19rpx;
+  color: #A5AAAD;
+  font-size: 20rpx;
+}
+.proList .proContainer .proInfo .proPrice {
+  padding-left: 33rpx;
+}
+.proList .proContainer .proInfo .proPrice .proUnitPrice {
+  font-size: 0;
+}
+.proList .proContainer .proInfo .proPrice .proUnitPrice .num {
+  font-size: 28rpx;
+  color: #FF5B29;
+}
+.proList .proContainer .proInfo .proPrice .proUnitPrice text {
+  font-size: 20rpx;
+  color: #849098;
+}
+.proList .proContainer .proInfo .proPrice .proNum {
+  padding-right: 20rpx;
+}
+.proList .proContainer .proInfo .proPrice .proNum image {
+  font-size: 0;
+  width: 48rpx;
+  height: 48rpx;
+}

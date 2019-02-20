@@ -1,0 +1,40 @@
+@import "../../assets/css/flex.wxss";
+@import "../../assets/css/common.wxss";
+.col-class{
+  width: 20%;
+}
+.proFilter{
+  background: white;
+  .proFilterTitle{
+    height:97rpx;
+    text{
+      height:100%;
+      font-size: 30rpx;
+    }
+  }
+  .filterSort{
+    font-size: 0;
+    padding-left: 10rpx;
+    view{
+      font-size: 0;
+    }
+    image{
+      width:18rpx;
+      height:16rpx;
+    }
+  }
+  .selectFilter{
+    color: #01A159;
+    position: relative;
+    &:after{
+      position: absolute;
+      .flex();
+      .flexCentered();
+      bottom: 0;
+      content: " ";
+      height:4rpx;
+      width:100%;
+      background: #01A159;
+    }
+  }
+}

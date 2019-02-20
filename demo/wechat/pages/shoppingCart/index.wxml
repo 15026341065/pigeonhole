@@ -1,0 +1,10 @@
+<!--pages/shoppingCart/index.wxml-->
+<view id="container">
+    <view class="nav flex flexCentered">
+        <text>购物车({{num.length}})</text>
+    </view>
+    <view>
+        <noData wx:if="{{list.length===0||!list}}"></noData>
+        <data wx:else bind:getNumber="getNumber"></data>
+    </view>
+</view>

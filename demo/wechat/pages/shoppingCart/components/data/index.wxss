@@ -1,0 +1,128 @@
+.flex {
+  display: flex;
+}
+/* 居中 */
+.flexCentered {
+  justify-content: center;
+}
+/* 垂直 */
+.flexVertical {
+  align-items: center;
+}
+.flexFirst {
+  flex-grow: 0;
+}
+.flexCenter {
+  flex-grow: 1;
+}
+.flexLast {
+  flex-grow: 0;
+}
+.flexLevel {
+  flex: 1;
+}
+.proList {
+  padding-bottom: 20rpx;
+}
+.proList:last-child {
+  padding-bottom: 0;
+}
+.proList .proContainer {
+  padding: 30rpx 0 30rpx 10rpx;
+  background: white;
+}
+.proList .proContainer .proCheck {
+  padding-right: 17rpx;
+}
+.proList .proContainer .proCheck .radio {
+  transform: scale(0.8);
+}
+.proList .proContainer .proInfo .proLogo {
+  font-size: 0;
+  width: 160rpx;
+  height: 160rpx;
+  border: 1rpx solid #ededed;
+}
+.proList .proContainer .proInfo .proLogo image {
+  width: 138rpx;
+  height: 138rpx;
+}
+.proList .proContainer .proInfo .proDesc {
+  padding-left: 33rpx;
+}
+.proList .proContainer .proInfo .proDesc .proName {
+  padding-top: 13rpx;
+  color: #1D3646;
+  font-size: 28rpx;
+}
+.proList .proContainer .proInfo .proDesc .stock {
+  padding: 22rpx 0 19rpx;
+  color: #A5AAAD;
+  font-size: 20rpx;
+}
+.proList .proContainer .proInfo .proPrice {
+  padding-left: 33rpx;
+}
+.proList .proContainer .proInfo .proPrice .proUnitPrice {
+  font-size: 0;
+}
+.proList .proContainer .proInfo .proPrice .proUnitPrice .num {
+  font-size: 28rpx;
+  color: #FF5B29;
+}
+.proList .proContainer .proInfo .proPrice .proUnitPrice text {
+  font-size: 20rpx;
+  color: #849098;
+}
+.proList .proContainer .proInfo .proPrice .proNum {
+  padding-right: 20rpx;
+}
+.settlement {
+  position: fixed;
+  bottom: 50px;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+}
+.settlement .getmoney {
+  display: flex;
+  align-items: center;
+  background: white;
+  height: 100%;
+  width: 70%;
+}
+.settlement .getmoney .proCheck {
+  flex-grow: 1;
+  padding-right: 17rpx;
+}
+.settlement .getmoney .proCheck .radio {
+  transform: scale(0.8);
+  font-size: 24rpx;
+  color: #849098;
+}
+.settlement .getmoney .total {
+  padding-right: 40rpx;
+  flex-grow: 0;
+}
+.settlement .getmoney .total text {
+  font-size: 24rpx;
+  color: #1D3646;
+}
+.settlement .getmoney .total .money {
+  font-size: 28rpx;
+  color: #FF5B29;
+}
+.settlement .button {
+  width: 30%;
+  height: 100%;
+  background: #0CD37C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.settlement .button view {
+  font-size: 30rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: #ffffff;
+}

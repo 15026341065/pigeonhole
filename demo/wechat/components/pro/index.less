@@ -1,0 +1,78 @@
+@import "../../assets/css/flex.wxss";
+@import "../../assets/css/common.wxss";
+.recommendedBrand {
+  font-size: 0;
+}
+.recommendedBrandContainer{
+  display: flex;
+  flex-wrap: wrap;
+  background: #F8F8F8;
+}
+.recommendedBrandContainer .recommendedBrandConttent{
+  width: 50%;
+}
+.recommendedBrandContainer .recommendedBrandConttent .brand{
+  padding-bottom: 45rpx;
+  margin-right: 10rpx;
+  .proDesc{
+    padding:20rpx 20rpx 0;
+    .proName{
+      font-size: 24rpx;
+      color: #333333;
+    }
+    .brandName{
+      font-size: 24rpx;
+      color: #999999;
+      padding-top: 10rpx;
+      padding-bottom: 10rpx;
+    }
+    .proDetails{
+      padding-bottom: 15rpx;
+      text{
+        display: block;
+        font-size: 24rpx;
+        color: #999999;
+        &:last-child{
+          width: 40%;
+        }
+        &:first-child{
+          width: 60%;
+        }
+      }
+    }
+    .proShopping{
+      .proPrice{
+        .price{
+          font-size: 28rpx;
+          color: #FD4912;
+        }
+        .company{
+          font-size: 20rpx;
+          color: #A5AAAD;
+        }
+      }
+      .addPro{
+        font-size: 0;
+        image{
+          width: 48rpx;
+          height: 48rpx;
+        }
+      }
+    }
+  }
+}
+
+.recommendedBrandContainer .recommendedBrandConttent:nth-child(even) .brand{
+  margin-right: 0;
+}
+
+.recommendedBrand .brandPro{
+  font-size: 0;
+  border-radius: 10rpx;
+  overflow: hidden;
+  background: white;
+}
+.recommendedBrand .brandPro image {
+  width: 100%;
+  height: 350rpx;
+}

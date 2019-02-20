@@ -1,0 +1,92 @@
+@import "../../assets/css/flex.wxss";
+@import "../../assets/css/common.wxss";
+view{
+  font-size: 30rpx;
+  color: #333333;
+}
+.searchContainer{
+  background: #01A159;
+  padding: 18rpx 40rpx;
+  .searchContent{
+    background:rgba(0,0,0,0.15);
+    border-radius:32rpx;
+    padding: 0 35rpx;
+    .searchInput{
+      color:rgba(255,255,255,0.5);
+    }
+    input{
+      height:64rpx;
+      font-size: 30rpx;
+      width:100%;
+      color: #FFFFFF;
+    }
+  }
+}
+
+.list{
+  padding-top: 10rpx;
+}
+.proList{
+  padding-bottom: 20rpx;
+  &:last-child{
+    padding-bottom: 0;
+  }
+  .proContainer{
+    padding: 30rpx 0 30rpx 10rpx;
+    background: white;
+    .proCheck{
+      padding-right: 17rpx;
+      .radio{
+        transform:scale(0.8);
+      }
+    }
+    .proInfo{
+      .proLogo{
+        font-size: 0;
+        width:160rpx;
+        height:160rpx;
+        border:1rpx solid rgba(237,237,237,1);
+        image{
+          width: 138rpx;
+          height:138rpx;
+        }
+      }
+      .proDesc{
+        padding-left: 33rpx;
+        .proName{
+          padding-top: 13rpx;
+          color: #1D3646;
+          font-size: 28rpx;
+        }
+        .stock{
+          padding: 22rpx 0 19rpx;
+          color: #A5AAAD;
+          font-size: 20rpx;
+        }
+      }
+      .proPrice{
+        padding-left: 33rpx;
+        .proUnitPrice{
+          font-size: 0;
+          .num{
+            font-size: 28rpx;
+            color: #FF5B29;
+          }
+          text{
+            font-size: 20rpx;
+            color: #849098;
+          }
+        }
+        .proNum{
+          padding-right: 20rpx;
+          image{
+            font-size: 0;
+            width: 48rpx;
+            height: 48rpx;
+          }
+        }
+
+      }
+    }
+  }
+}

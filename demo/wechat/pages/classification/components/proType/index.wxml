@@ -1,0 +1,13 @@
+<!--pages/classification/components/proType/index.wxml-->
+<view class="proTypeContainer" style="height:{{getHeight}};">
+
+    <view class="proTypeCommon {{selectParentState==='all'?'selectParent':''}}" bindtap="selectPrantType" data-index="all">全部商品</view>
+    <view class="proTypeListContainer" wx:for="{{proTypeList}}" wx:key="{{index}}">
+        <view class="proTypeCommon {{selectParentState===index?'selectParent':''}}" bindtap="selectPrantType" data-index="{{index}}" >{{item.title}}</view>
+        <view class="proTypeList {{selectParentState===index?'selectProTypeList':''}}" wx:if="{{item.children}}">
+            <view class="proTypeCommon proTypeChildren {{selectParentState===index&&selectChildrenState===childrenIndex?'selectChildren':''}}" bindtap="selectChildrenType" data-index="{{childrenIndex}}" wx:for="{{item.children}}" wx:for-index="childrenIndex" wx:for-item="childrenItem" wx:key="{{childrenIndex}}">
+                {{childrenItem.title}}
+            </view>
+        </view>
+    </view>
+</view>

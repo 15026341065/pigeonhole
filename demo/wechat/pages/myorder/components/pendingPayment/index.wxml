@@ -1,0 +1,41 @@
+<!--pages/myorder/components/pendingPayment/index.wxml-->
+<view class="content">
+    <view class="order">
+        <view class="orderNum">
+            <view class="num">订单编号:12548788721545</view>
+            <view class="orderState">待付款</view>
+        </view>
+        <view class="orderdetails">
+            <view class="prodetails">
+                <view class="proLogo">
+                    <view>
+                        <image mode="widthFix" src="../../../../assets/images/home/1550153664(1).jpg"></image>
+                    </view>
+                </view>
+                <view class="promoney">
+                    <view class="money">￥1582.2</view>
+                    <view class="pronum">共7件</view>
+                </view>
+            </view>
+            <view class="orderDesc">
+                <view>
+                    <text class="type">配送方式:</text>
+                    <text class="desc">送货上门</text>
+                    <text class="state">待审核</text>
+                </view>
+                <view>
+                    <text class="type">付款方式:</text>
+                    <text class="desc">预付款(先付)</text>
+                    <text class="state">未付款</text>
+                </view>
+            </view>
+        </view>
+        <view class="orderdate">
+            <view class="date">2018-01-02 12:12:58</view>
+            <view class="button">
+                <button>去支付</button>
+            </view>
+        </view>
+    </view>
+</view>
+

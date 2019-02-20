@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "filterPage":"./components/filterPage/index",
+    "pro":"../../../../components/pro/index"
+  }
+}
