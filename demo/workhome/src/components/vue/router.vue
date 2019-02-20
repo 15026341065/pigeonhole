@@ -28,7 +28,7 @@
 <style scoped lang="less">
 	.list{
 		width: 100%;
-		
+		color: #fff;
 		ul{
 			display: flex;
 			flex-direction: column;
